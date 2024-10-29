@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Navbar } from "../templates/Public";
+import { Public } from "../templates";
 
 interface Props {
   children: ReactNode;
@@ -10,8 +10,9 @@ export const MainLayout = (_props: Props) => {
 
   return (
     <main>
-      <Navbar />
+      <Public.Navbar />
       {children}
+      <Public.Footer />
     </main>
   );
 };

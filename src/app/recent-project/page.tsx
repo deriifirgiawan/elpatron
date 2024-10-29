@@ -1,9 +1,9 @@
-import { MainLayout } from "@/core";
+import { MainLayout, RecentProject } from "@/core";
 
 export default function RecentProjectPage() {
   return (
     <MainLayout>
-      <h1>RecentProject</h1>
+      <RecentProject.List />
     </MainLayout>
   );
 }

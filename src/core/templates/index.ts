@@ -1,3 +1,5 @@
 export * as Public from './Public'
 export * as Home from './Home'
 export * as Services from './Services'
+export * as Contact from './Contact'
+export * as RecentProject from './RecentProject'
