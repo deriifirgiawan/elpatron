@@ -41,15 +41,19 @@ export const Navbar = () => {
 
       <div className="flex justify-between items-center flex-col md:flex-col lg:flex-row">
         <div className="mt-4 flex flex-wrap justify-center">
-          {navbarData.map((item, index) => (
-            <Link
-              key={`${item.name}--${index}`}
-              className="text-sm pr-6 lg:mb-0 md:mb-0 mb-4"
-              href={item.url}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navbarData.map((item, index) => {
+            return (
+              item.is_render && (
+                <Link
+                  key={`${item.name}--${index}`}
+                  className="text-sm pr-6 lg:mb-0 md:mb-0 mb-4"
+                  href={item.url}
+                >
+                  {item.name}
+                </Link>
+              )
+            );
+          })}
         </div>
         <div className="flex md:mt-4 flex-wrap justify-center">
           <Link href="#" className="text-sm pr-6">
