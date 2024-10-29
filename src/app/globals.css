@@ -1,6 +1,11 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #181818;
+  color: #FFFF;
+}
 
   @layer base {
     :root {
@@ -72,5 +77,8 @@
     }
     body {
       @apply bg-background text-foreground;
+    }
+    .my-container {
+      @apply lg:px-20 md:px-16 px-6
     }
   }

@@ -1,0 +1,5 @@
+export * from './Banner'
+export * from './GetToKnow'
+export * from './WeWantToHear'
+export * from './Employment'
+export * from './Privacy'

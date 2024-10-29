@@ -6,3 +6,4 @@ export * from "./Card";
 export * from "./Table";
 export * from "./Tooltip";
 export * from "./Icon";
+export * from './Carousel'
